@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  
+    background: url(./assets/WhatsApp\ Image\ 2024-06-29\ at\ 20.26.18.jpeg) no-repeat center center/cover;
+    min-height: 100vh;
+    background: rgba(51, 51, 51, 0.366);
+}
+
+header {
+    background: rgba(51, 51, 51, 0.188);
+    /* color: #fff; */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    background: rgba(51, 51, 51, 0.616);
+    
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    /* color: #fff; */
+    padding: 4rem 0;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.188);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.about, .menu, .contact, .related {
+    padding: 2rem 0;
+    text-align: center;
+    background: rgba(51, 51, 51, 0.188);
+}
+
+.about p {
+    font-weight: 700;
+    color: #fff;
+    background: rgba(51, 51, 51, 0.188);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-item {
+    width: 80%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.043);
+    text-align: center;
+    color: #fff;
+   
+}
+
+.menu-item img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+footer {
+ 
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem 0;
+    background: rgba(51, 51, 51, 0.616);
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+footer .social-media img {
+    margin: 0 0.5rem;
+}
+
+footer .whatsapp, .redes {
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Garantindo que o background cubra todo o corpo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/WhatsApp\ Image\ 2024-06-29\ at\ 20.26.18.jpeg) no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.6; /* Ajuste a opacidade conforme necessário */
+}
